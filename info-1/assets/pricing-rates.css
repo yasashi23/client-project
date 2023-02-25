@@ -1,0 +1,8 @@
+.no-bottomspace .section:not(.header):not(.footer)+.section { margin-top: 0;}
+
+.pev-rate .headingcomp {background: #fff;}
+.pev-rate .heading--text {padding: 1.5em 1em 0.25em;}
+.pev-rate .heading--text h1 {font-size: 1.75rem;}
+.pev-rate .section:not(.header):not(.footer)+.section {margin-top: 0;}
+.pev-rate .cmp-text {background: #ffffff; padding: 0.5em 1.5em 1.5em;}
+.pev-rate .cmp-text p {margin: 0 0 5px; color: #939598; font-size: 0.78rem;}

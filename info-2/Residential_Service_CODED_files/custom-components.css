@@ -1,0 +1,1512 @@
+/**
+ * White horizontal rule
+ *
+ * Apply to:    Parent column control
+ * Class:       "white-hr"          (Required)
+ * As on:       Outage Information
+ */
+ .white-hr hr {
+    border-top: 1px solid #ffffff !important;
+}
+
+
+
+/**
+ * Remove white background of select components
+ *
+ * Apply to:    Parent column control
+ * Class:       "trans-content"         (Required)
+ * As on:       CSPP
+ */
+ .trans-content .callout-card,
+ .trans-content .content-card {
+    background-color: transparent;
+}
+.trans-content .accordion--item,
+.trans-content .accordion-component .accordion__item {
+    background-color: transparent !important;
+    border: 1px solid #A8BFC4 !important;
+}
+.trans-content .wrap-link-list .link-list {
+    background-color: transparent;
+}
+
+
+
+/**
+ * Tighten up spacing between multiple CTAs
+ *
+ * Apply to:    Parent column control
+ * Class:       "cta-margin-bottom"      (Required)
+ * As on:       Residential EV landing page
+ */
+
+.cta-margin-bottom .content-card .button .btn {
+    margin-bottom:15px;
+}
+.cta-margin-bottom .content-card .button .cta {
+    margin-bottom: 5px;
+}
+
+
+
+/**
+ * When callout cards are stacked, move last one up to close gap
+ *
+ * Apply to:    Text (in edit mode, add class attribute to <p> in code view)
+ * Class:       "secondary-cta"         (Required)
+ * As on:       HEIP
+ */
+.secondary-cta {
+    margin-top: -1.5em;
+}
+.secondary-cta + a.cta {
+    margin-top: 0 !important;
+}
+
+
+
+/**
+ * Resize icons when columns become stacked rows
+ *
+ * Apply to:    Column control directly housing adaptive image component
+ * Classes:     "icon-grid"             (Required)
+ *              "icon-size-sm"          (Optional, 42 x 42 px)
+ *              "icon-size-md"          (Optional, 75 x 75 px)
+ *              "icon-size-lg"          (Optional, 100 x 100 px)
+ * As on:       Energy Services
+ */
+@media (max-width:991px) {
+    .columnctrcomp .row.icon-grid [class^="col-"] .columnctrcomp .row > section + section {
+        padding-top: 0 !important;
+    }
+    .icon-grid .adaptiveimage img:not(.cq-image-placeholder) {
+        width: 50%;
+    }
+    .icon-grid.icon-size-sm .adaptiveimage img:not(.cq-image-placeholder) {
+        width: 42px;
+    }
+    .icon-grid.icon-size-md .adaptiveimage img:not(.cq-image-placeholder) {
+        width: 75px;
+    }
+    .icon-grid.icon-size-lg .adaptiveimage img:not(.cq-image-placeholder) {
+        width: 100px;
+    }
+}
+
+
+
+/**
+ * Horizontal alignment for components without config property
+ *
+ * Apply to:    Column control directly housing target component
+ * Classes:     Style-specific (e.g. Additional Style Class = cmp-align center)
+ * As on:       EE RISE
+ */
+.cmp-align.center .buttonlist.linktext {
+    text-align: center;
+}
+.cmp-align.left .buttonlist.linktext {
+    text-align: left;
+}
+.cmp-align.right .buttonlist.linktext {
+    text-align: right;
+}
+
+
+
+/**
+ * Bordered side-by-side heading and callout card
+ *
+ * Apply to:    Column control of callout card only
+ * Classes:     Style-specific, selectors listed below
+ * As on:       HEIP
+ */
+
+.section-border {
+    border: 18px solid #f2f2f2;
+}
+.section-border-md {
+    border: 18px solid #f2f2f2;
+    /* margin: 0 -18px 0 -18px !important; */
+}
+.section-border-sm {
+    border: 10.5px solid #f2f2f2;
+    /* margin: 0 !important; */
+}
+.section-border-left-sm {
+    border-left: 4px solid #f2f2f2;
+    /* margin-left: -10.5px !important; */
+}
+.section-border-right-sm {
+    border-right: 4px solid #f2f2f2;
+    /* margin-right: -10.5px !important; */
+}
+.section-border-left {
+    border-left: 1px solid #e8e8e8;
+    /* margin-left: -10.5px !important; */
+}
+.section-border-right {
+    border-right: 1px solid #e8e8e8;
+    /* margin-right: -10.5px !important; */
+}
+.section-border-left:hover {
+    background-color:#f8f8f8 !important;
+}
+.section-border-right:hover {
+    background-color:#f8f8f8 !important;
+}
+
+
+
+/**
+ * Collapse default margins between FAQ items
+ *
+ * Apply to:    Advanced FAQ component
+ * Classes:     Not required, will be set automatically
+ */
+.faq.accordion .faq--question + .faq--question {
+    margin-top: 0;
+}
+
+
+
+/**
+ * Match header and link size in accordion, tighten spacing
+ *
+ * Apply to:    Column control of FAQ or Accordion component
+ * Classes:     "accordion-sm"
+ */
+.accordion-sm {
+    margin-top: -3em !important;
+}
+.accordion-sm .accordion h2 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 1em 3em 1em 1.2em;
+}
+.accordion-sm .accordion p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+
+
+/**
+ * Give the appearance of a nested accordion below a content card
+ *
+ * Apply to:    Column control of Accordion component; this is row-specific
+ * Classes:     "accordion-inline"
+ * As on:       CCR Compliance
+ */
+.accordion-inline.row .contentcard.section {
+    height: auto;
+}
+.accordion-inline.row .contentcard.section .content-card {
+    height: auto;
+    min-height: auto;
+}
+.accordion-inline.row .accordioncomp.section {
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0;
+}
+.accordion-inline.row .accordioncomp.section .accordion__item {
+    border-left: none;
+    border-right: none;
+    margin-top: 0;
+}
+.accordion-inline.row .accordioncomp.section .accordion__title {
+    padding: 1.25em 2.5em 1.25em 1em;
+}
+.accordion-inline.row .section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.accordion-inline.row > section > div {
+    background: white;
+    height: auto !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+    .accordion-inline.row > section > div > .contentcard {
+        border-top: 20px solid #f2f2f2;
+        padding-top: 0 !important;
+    }
+}
+
+
+
+/**
+ * Hide filter row
+ *
+ * Apply to:    Column control of Rebates component
+ * Classes:     "no-filter"
+ * As on:       Winter Energy Efficiency Tips
+ */
+.no-filter .rebates__label,
+.no-filter .rebates__filter.category,
+.no-filter .rebates .rebates__filters .rebates__pages  {
+    display: none;
+}
+.no-filter .rebates .rebates__filters {
+    margin-bottom: 0 !important;
+}
+@media screen and (min-width: 992px) {
+	.no-filter .rebates__container.component::before {
+		    content: ' ';
+		    position: absolute;
+		    background: none !important;
+    }
+}
+
+
+
+/**
+ * Responsive HTML5 Brightcove video
+ *
+ * Apply to:    Freeform HTML
+ * Classes:     Automatically set by code generator
+ * As on:       Community Solar
+ */
+.ff-bcv-embed {
+	position: relative;
+	display: block;
+	max-width: 100%;
+}
+.ff-bcv-embed .embed-wrapper {
+    padding-top: 56.25%;
+    border: none;
+}
+.ff-bcv-embed .player-wrapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.ff-bcv-embed .bc-player-default_default {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ff-bcv-embed .video-js .vjs-tech {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/**
+ * Non-callout CTA
+ *
+ * Apply to:    Freeform HTML on first DIV
+ * Classes:     "ff-cta"
+ * As on:       Community Solar
+ */
+.ff-cta .cta {
+    border: 0;
+    display: block;
+}
+.ff-cta .cta:after {
+    content: '';
+    margin-left: 1em;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #ec1c24;
+    border-top: 5px solid transparent;
+    transition: all .25s ease-in-out;
+}
+.ff-cta .cta:hover:after {
+    margin-left:1.5em;
+}
+
+
+/**
+ * Style iconography rows to restrict dimensions of adaptive images
+ *
+ * Apply to:    Parent column control only (columns are nested for each icon)
+ * Classes:     "icon"
+ * As on:       Sports Lighting
+ */
+.icon img {
+    max-width: 42px;
+}
+.icon h3,
+.icon .freeformcomp.section {
+    padding: 0;
+    margin: 0 !important;
+}
+.icon .cmp.cmp-text.section {
+    margin-top: 10px !important;
+}
+
+
+/**
+ * Style iconography rows to restrict dimensions of image components converted from icon callout components
+ *
+ * Apply to:    Parent column control that contains the icon group
+ * Classes:     "img-as-icon"
+ * As on:       Telecom Colocation
+ */
+.img-as-icon .image.section .cmp-image {
+    text-align: center;
+}
+.img-as-icon .image.section .cmp-image .cmp-image__image {
+    max-width: 65px;
+    width: auto;
+}
+
+
+/**
+ * Sidebar grid display
+ *
+ * Apply to:    Parent column control of Item Grid component
+ * Classes:     "grid-small"
+ * As on:       Business Products & Programs
+ */
+.grid-small .item-grid .item-grid__header .item-grid__title {
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+.grid-small .item-grid img {
+    margin-bottom: 0 !important;
+}
+.grid-small .item-grid .callout--cell {
+    padding-bottom: 0 !important;
+}
+
+
+
+/**
+ * Allow 4 promos in a row; default max is 3
+ *
+ * Apply to:    Parent column control of Promo Picker components
+ * Classes:     "porthole-4col"
+ * As on:       Grid Investment Plan
+ */
+.porthole-4col a.promo-porthole .promo--text_wrap .promo--text div {
+    height: calc(100% - 5rem);
+}
+.porthole-4col a.promo-porthole .promo--text--heading {
+    height: 5rem;
+}
+
+
+
+/**
+ * Presentation of contact information
+ *
+ * Apply to:    Accordion Item description field, edit in code view
+ * Classes:     Specific per LI element, reference example page
+ * As on:       EV Charger Installer
+ */
+ul.contact {
+    list-style-type: none;
+    padding-left: 0px;
+}
+ul.contact li:before {
+    content: "";
+    display: block;
+    float: left;
+    margin: 4px 16px 0 0;
+}
+ul.contact li.contact:before {
+    background: url(https://www.georgiapower.com/content/dam/georgia-power/callout-icons/icon-person.png) no-repeat;
+    width: 19px;
+    height: 21px;
+}
+ul.contact li.phone:before {
+    background: url(https://www.georgiapower.com/content/dam/georgia-power/callout-icons/icon-phone.png) no-repeat;
+    width: 21px;
+    height: 21px;
+}
+ul.contact li.web:before {
+    background: url(https://www.georgiapower.com/content/dam/georgia-power/callout-icons/icon-www.png) no-repeat;
+    width: 21px;
+    height: 21px;
+}
+ul.contact li.email:before {
+    background: url(https://www.georgiapower.com/content/dam/georgia-power/callout-icons/icon-envelope.png) no-repeat;
+    width: 21px;
+    height: 17px;
+}
+
+
+
+/**
+ * Remove margins from image gallery container
+ *
+ * Apply to:    Parent column control of Image and Video Gallery component
+ * Classes:     "gallery-no-margin"
+ * As on:       EV Charger Installer
+ */
+.gallery-no-margin .gallery {
+    margin: 0 !important;
+}
+
+
+
+/**
+ * Relative styling for icon callouts
+ *
+ * Apply to:    Freeform HTML for promopickercomp content
+ * Classes:     "rfy-stacked"
+ * As on:       Business CRC
+ */
+@media (min-width:992px) {
+    .rfy-stacked .freeformcomp.section {
+        margin-top: .5em !important;
+        position: relative;
+        overflow: auto;
+    }
+    .rfy-stacked .freeformcomp.section .promopickercomp {
+        border-bottom: 1px solid #ededed;
+        margin-bottom: .5em;
+        margin-top: -.5em !important;
+    }
+    .rfy-stacked .freeformcomp.section .promo {
+        min-height: auto;
+    }
+    .rfy-stacked .freeformcomp.section .promo .promo--text {
+        position: relative;
+        top: auto;
+    }
+    .rfy-stacked .freeformcomp.section + .horizontalrule.section {
+        display: none !important;
+    }
+}
+
+
+
+/**
+ * Allow display of only one hyperlink so it can be coupled with other components
+ *
+ * Apply to:    Parent column control of Link List component
+ * Classes:     "single-link"
+ * As on:       Solar CRSP
+ */
+.single-link .link-list.link-list__text-link {
+    background: transparent !important;
+    padding: 0;
+}
+.single-link .link-list.link-list__text-link ul {
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.single-link .link-list.link-list__text-link li {
+    padding-bottom: 0;
+}
+.single-link.align-center {
+    text-align: center !important;
+}
+
+
+
+/**
+ * Left-justify title text when it's the only component within a column control
+ *
+ * Apply to:    Parent column control of Title component
+ * Classes:     "title-col"
+ * As on:       Flatbill
+ */
+.title-col.row {
+    padding-left: 0 !important;
+}
+.title-col.row .section.title {
+    padding: 0 !important;
+}
+
+
+
+/**
+ * COVID-19 disclaimer below hero banner
+ *
+ * Apply to:    Freeform <p>
+ * Classes:     "covid-disclaimer"
+ * As on:       Products and programs (Save money and energy)
+ */
+.covid-disclaimer {
+    margin: -1em 0 .5em;
+    text-align: center;
+}
+
+
+
+/**
+ * Icon callout used for navigation in hero banner area
+ *
+ * Apply to:    Parent column control of full row, set breakpoint to "Medium", set icon callout display "Left of Text"
+ * Classes:     "inset-section-nav"
+ * As on:       Community
+ */
+.inset-section-nav .iconcallout {
+	background: #fff;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+	text-align: left;
+	transition: background .25s ease-in-out;
+	font-size: 1.2rem;
+	height: auto;
+}
+.inset-section-nav .iconcallout a {
+	display: block;
+}
+.inset-section-nav .iconcallout a:hover {
+	background: #e6e7e8;
+}
+.inset-section-nav .iconcallout a:after {
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+}
+.inset-section-nav .iconcallout .iconcallout__container {
+	margin-bottom: 0;
+}
+.inset-section-nav .iconcallout__icon {
+	width: 40px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.inset-section-nav .iconcallout .iconcallout__icon .iconcallout__img {
+	float: left;
+	width: 40px;
+	margin: 0;
+	padding: 10px;
+}
+.inset-section-nav .iconcallout .iconcallout__heading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'jaf-bernina-sans', sans-serif;
+	line-height: 1;
+    width: 100%;
+	margin: 0;
+	padding: 1em 0;
+	box-sizing: border-box;
+    float: right;
+    color: #727477;
+}
+.inset-section-nav.background-col .iconcallout {
+    margin: 1.5em 0;
+}
+.inset-section-nav.background-col .iconcallout,
+.inset-section-nav.background-col .iconcallout .iconcallout__container .iconcallout__content {
+    padding: 0 !important;
+}
+.inset-section-nav.background-col .iconcallout .iconcallout__container .iconcallout__icon {
+    margin-bottom: 0;
+}
+.inset-section-nav.background-col .iconcallout .iconcallout__heading {
+    margin-bottom: 0 !important;
+}
+@media (min-width: 992px) {
+	.inset-section-nav.background-col .iconcallout {
+        margin-left: 1em;
+    }
+}
+@media (max-width: 1199px) {
+    .inset-section-nav .iconcallout .iconcallout__heading {
+        font-size: 12px;
+    }
+}
+@media (max-width: 991px) {
+    .inset-section-nav {
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+}
+@media (max-width: 568px) {
+    .inset-section-nav .iconcallout .iconcallout__heading {
+        font-size: 10px;
+    }
+}
+
+
+/**
+ * Scales iframes within freeform component; primarily used for Facebook videos
+ *
+ * Apply to:    Freeform HTML
+ * Classes:     "resp-container"
+ * As on:       CRC
+ */
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/**
+ * Standalone class for viewport-specific display
+ *
+ * Apply to:    Component
+ * Classes:     "hide-lvp" OR "hide-svp"
+ * As on:       TBD
+ */
+@media (max-width: 752px) {
+    .hide-svp {
+        display: none !important;
+    }
+}
+@media (min-width: 753px) {
+    .hide-lvp {
+        display: none !important;
+    }
+}
+@media (min-width: 320px) {
+    .desktop-only {
+        display: none !important;
+    }
+    .mobile-only {
+        display: block !important;
+    }
+}
+@media (min-width: 992px) {
+    .desktop-only {
+        display: block !important;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+
+
+/**
+ * Sets additional background properties for column control
+ *
+ * Apply to:    N/A, class applied when background URL is defined
+ * Classes:     N/A
+ * As on:       TBD
+ */
+.column-control.column-control--background-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/**
+ * Prevent elements from wrapping to new lines when in a single row
+ *
+ * Apply to:    Parent column control of rows
+ * Classes:     "row-nowrap"
+ * As on:       Electric Living
+ */
+ .row-nowrap {
+    margin: 0 auto;
+    text-align: center;
+}
+.row-nowrap .image.section {
+    display: inline-block;
+}
+
+
+
+/*
+ * QA TEMP, MOVE TO GLOBAL
+ * ========================================================================= */
+
+/* Social card */
+.socialcard.section .social-card {
+    color: #000;
+}
+
+/* Rebate callout */
+.page .rebatecallout.section {
+    background-color: transparent;
+}
+.page .rebatecallout.section .rebates__col {
+    background-color: white;
+    padding: 1em;
+}
+.page .rebatecallout.section .rebates__col .rebates__item h5.rebates__expiration {
+    font-size: 1rem;
+}
+
+
+/* from platform clientlibs */
+.aptable-container{margin:1.5em 0;}
+.aptable{background:#fff;margin:auto;width:100%;}
+.aptable th,.aptable td{padding:.75em .5em;}
+.aptable th{text-align:left;font-weight:400;}
+.aptable .aptable--title th{background:#4d4d4d;color:#fff;font-style:normal;font-weight:300;font-size:1.5em;}
+.aptable img{display:inline-block;max-width:100%;}
+.aptable tbody tr:nth-child(odd){background-color:#e8e8e8;}
+.aptable__borders th,.aptable__borders td{border:1px solid #4d4d4d;}
+.aptable--cell__center{text-align:center;}
+
+
+.quote.section + .linklist.section .link-list__list.link-list__list--text-link {
+    padding-left: 0;
+}
+
+
+.adaptive-hero-carousel + .breadcrumb {
+    margin-top: 0;
+}
+
+/* temp fix for CEE banners */
+.adaptive-hero-carousel.section.ff-energyefficiency {
+    margin-top: -20px;
+    padding: 0 0 20px 0 !important;
+}
+.adaptive-hero-carousel.section.ff-energyefficiency article a.btn {
+    background: #ec1c24 !important;
+    border-color: #ec1c24 !important;
+    color: #fff !important;
+}
+.adaptive-hero-carousel.section.ff-energyefficiency article a.btn:hover {
+    background: #fff !important;
+    border-color: #ec1c24 !important;
+    color: #ec1c24 !important;
+}
+
+
+/* Fix article carousel font when link is active; component adds para */
+.wrap-article-carousel .article-carousel__article .article-carousel__content-wrap .content__title p {
+	margin-bottom: 0;
+}
+
+/* Fix adaptive hero carousel image tag exposure; it presents as broken thumbnail */
+.root.responsivegrid .adaptive-carousel .slides .item img.invisible  {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Brand refresh
+ ====================================================================================================================================*/
+
+/* @todo: secondary styles for themes, dark/light text, font sizes, mobile image height max */
+/* @todo: configure standalone band-only header ala tagline format */
+/* @todo: hover state for CTA */
+/* @todo: interchangeable navigation styles for link list vs deep content nav */
+
+
+/* Breadcrumb */
+.breadcrumb.aem-GridColumn.aem-GridColumn--default--12 {
+    border-bottom: none;
+    margin-bottom: 0 !important;
+}
+.breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb {
+    padding: .25em 1em .75em;
+}
+.breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item-link,
+.breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item + .cmp-breadcrumb__item::before,
+.breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item + .cmp-breadcrumb__item::after {
+    color: #767676;
+    font-size: 0.9rem;
+}
+.breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item:last-child::after {
+    content: '/';
+    padding: 0 5px;
+}
+@media (min-width:320px) {
+    .breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item:not(:nth-of-type(1)) {
+        display: none;
+    }
+    .breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item:nth-of-type(1)::after {
+        content: '/';
+        padding: 0 5px;
+        color: #767676;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width:768px) {
+    .breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item {
+        display: inline-block !important;
+    }
+    .breadcrumb.aem-GridColumn.aem-GridColumn--default--12 .cmp-breadcrumb .cmp-breadcrumb__item:nth-of-type(1)::after {
+        content: none;
+        padding: inherit;
+    }
+}
+
+
+/* Item grid tiles */
+@media (min-width: 320px) {
+    .row.nav-as-intro {
+        margin-top: -1.5em;
+    }
+}
+@media (min-width: 992px) {
+    .row.nav-as-intro {
+        margin-top: 3em;
+    }
+    .itemgrid .item-grid__single .item-grid__header {
+        width: 85%;
+    }
+}
+.itemgrid .item-grid {
+    justify-content: center;
+}
+.itemgrid .item-grid__single .item-grid__footer {
+    display: block;
+}
+.itemgrid .item-grid__single .item-grid__footer p {
+    font-size: 1.143rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.itemgrid .item-grid__single .item-grid__header .item-grid__title {
+    font-size: 1.286rem;
+    font-weight: 600;
+}
+@media (min-width:768px) {
+    .column-control.has-background > .bootstrap-container > .row:not(.add-top-padding):not(.mobile-only) {
+        padding-top: 0;
+    }
+}
+
+
+/* Promo carousel */
+.page .promo-carousel__heading {
+    margin: 1.5rem 0;
+    font-size: 2.143rem;
+    font-weight: 300;
+}
+.promo-carousel__text-bar--image .content__title {
+    font-size: 1.071rem;
+}
+
+
+/* Content cards / Titles */
+.row.trans-content {
+    padding: 1.5em 0 !important;
+}
+.contentcard.section .content-card--content .button a.cta {
+    font-size: 1.143rem;
+}
+.contentcard.section .content-card--content h2.content-card__title {
+    font-size: 2.143rem;
+}
+.contentcard.section .content-card--content h3.content-card__title {
+    font-size: 1.714rem;
+}
+.contentcard.section .content-card--content .content-card__title {
+    font-weight: 600;
+}
+.title-thin .cmp-title__text,
+.title-thin .contentcard.section .content-card--content .content-card__title {
+    font-weight: 300;
+}
+.title-reg .cmp-title__text,
+.title-reg .contentcard.section .content-card--content .content-card__title {
+    font-weight: 500;
+}
+.title-semi .cmp-title__text,
+.title-semi .contentcard.section .content-card--content .content-card__title {
+    font-weight: 600;
+}
+.title-bold .cmp-title__text,
+.title-bold .contentcard.section .content-card--content .content-card__title {
+    font-weight: 800;
+}
+.title-small .cmp-title__text,
+.title-small .contentcard.section .content-card--content .content-card__title {
+    font-size: 1.286rem;
+}
+.contentcard.section .content-card--content .btn-outline-tertiary--inversed {
+    border-color: #ed1d24;
+    background-color: #ed1d24;
+    color: white;
+}
+.contentcard.section .content-card--content .btn-outline-tertiary--inversed:hover {
+    border-color: #ed1d24;
+    background-color: transparent;
+    color: #ed1d24;
+}
+@media (min-width: 320px) {
+	.even .col-sm-6:nth-of-type(1) .contentcard.section {
+		padding-bottom: 0;
+	}
+    .row.trans-content .col-sm-12 .contentcard.section {
+        padding: 1.5em 0;
+    }
+}
+@media (min-width: 768px) {
+	.even .col-sm-6:nth-of-type(1) .contentcard.section {
+		padding-bottom: 20px;
+	}
+    .row.trans-content .col-sm-12 .contentcard.section {
+        padding: 1.5em !important;
+    }
+}
+
+.feature-type .contentcard.section .content-card--content .content-card__title {
+    font-size: 2.143rem;
+    font-weight: 600;
+}
+.feature-type .disclaimer {
+    margin-top: -2.25em;
+}
+.feature-type .disclaimer p {
+    font-size: 1rem;
+}
+@media (min-width: 992px) {
+    .feature-type.card-position-right .contentcard.section,
+    .feature-type.card-position-right .accordioncomp.section {
+        margin: 0 0 0 4em;
+    }
+    .feature-type.card-position-right .accordioncomp.section .contentcard.section {
+        margin-left: 0;
+    }
+    .feature-type.card-position-left .contentcard.section {
+        max-width: 580px;
+    }
+    .feature-type.valign .content-card--content {
+        min-height: auto;
+        height: auto;
+        height: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.includes-label .wrap-content-card .content-card .content-card__title {
+    font-size: 1.286rem !important;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+.includes-label .wrap-content-card .content-card h3 {
+    font-size: 2.143rem;
+    font-weight: 300;
+}
+@media (min-width:768px) {
+    .includes-label .contentcard.section {
+        height: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+/* Link list */
+.wrap-link-list .link-list__list.link-list__list--button-link {
+    justify-content: center;
+}
+.row.nav-anchor.desktop-only {
+    margin-top: -1.5em;
+}
+.row.nav-anchor .wrap-link-list .link-list__list.link-list__list--text-link {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row.nav-anchor .wrap-link-list .link-list__list.link-list__list--text-link .link-list__item .link-list__link.text-link {
+    padding: 0 1.5em;
+    transition: none;
+}
+.row.nav-anchor .wrap-link-list .link-list__list.link-list__list--text-link .link-list__item .cta-icon {
+    display: none;
+}
+@media (min-width: 992px) {
+    .row.nav-flex .wrap-link-list .link-list__list.link-list__list--button-link .link-list__item,
+    .row.nav-anchor .wrap-link-list .link-list__list.link-list__list--text-link .link-list__item {
+        width: auto;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    .row.nav-flex .wrap-link-list .link-list__list.link-list__list--button-link .link-list__item a {
+        padding: 10px 3em;
+    }
+    .row.nav-anchor .linklist.section {
+        margin-top: -1.5em !important;
+        padding: 0 !important;
+    }
+}
+.row.nav-buttons-move-up {
+    margin-top: -1.5em;
+}
+@media (max-width:767px) {
+	.row.nav-buttons-move-up {
+        margin-top: -3em;
+    }
+	.row.nav-buttons-move-up .wrap-link-list .link-list__list.link-list__list--button-link .link-list__item {
+		margin: 20px 10px 0 10px;
+		width: 100% !important;
+	}
+}
+
+
+/* Accordion nav */
+.accordion-nav .accordion-component {box-shadow:0 2px 6px 0 rgba(0, 0, 0, 0.08); border:none;}
+.accordion-nav .accordion__title {padding: 1em 1.5em !important; border:2px solid #f2f2f2 !important; font-size:1.286rem !important; font-weight:300 !important;}
+.accordion-nav .accordion__content-inner {padding:0 !important;}
+.accordion-nav .linklist {padding-top:0 !important; padding-bottom: 0 !important;}
+.accordion-nav .linklist__item {padding:0 0 0.5em 0 !important;}
+.accordion-nav .link-list__title {font-size:1rem; font-weight:300; color: #000; padding: 1.5em 1.5em 0 1.5em; border:none;}
+.accordion-nav .wrap-link-list .link-list__link.text-link {font-weight: 600; font-size: 1.143rem;}
+.accordion-nav .wrap-link-list .link-list__list .link-list__item {padding: 0 0 0.5em 0;}
+.accordion-nav .wrap-link-list .link-list__list .link-list__item .cta-icon {display: none;}
+.accordion-nav hr {border:none; height:1px; background-color:#ededed; padding:0 !important; margin:0 !important;}
+/* @media (min-width:992px) {
+    .nav-anchor > section > div {margin-bottom: -3em;}
+}*/
+@media (min-width:320px) and (max-width:992px) {
+    .accordion-nav.mobile-only {margin-top: -1.5em; padding-top: }
+}
+
+/* Portal nav */
+@media (min-width: 320px) {
+    .herobanner + .columnctrcomp .portal-page-nav {
+        margin-top: -1.5em;
+    }
+    .herobanner + .columnctrcomp .portal-page-nav .itemgrid .item-grid__single .item-grid__link-container {
+        padding: 2em 1em;
+    }
+}
+@media (min-width: 768px) {
+    .herobanner + .columnctrcomp .portal-page-nav {
+        margin-top: -3em;
+    }
+}
+@media (min-width: 992px) {
+    .herobanner + .columnctrcomp .portal-page-nav {
+        margin-top: 3em;
+    }
+}
+
+
+/*
+ * Hero banner styles
+ * ===========================================================================*/
+
+/* Portal page type */
+@media (min-width: 320px) {
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        max-width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-top: -8em;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content {
+        background: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-mobile.png') no-repeat top center;
+        padding-top: 4em;
+        color: white;
+        background-size: 100% auto;
+        text-align: center !important;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content h1,
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.1;
+        padding-top: 0;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.143rem;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content p {
+        font-weight: 500;
+        line-height: 1.25;
+        margin-bottom: 0.5em;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner.hero-banner--medium .hero-banner__img > div {
+        height: 360px;
+        min-height: 260px;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner.hero-banner--medium .hero-banner__img > div > img {
+        top: 0 !important;
+        transform: translateX(-50%) !important;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__cta .button {
+        border-color: #032d4b;
+        background-color: #032d4b;
+        color: white;
+        font-weight: 600;
+    }
+}
+@media (min-width: 568px) {
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner.hero-banner--medium .hero-banner__img > div {
+        height: 460px;
+        min-height: 360px;
+    }
+}
+@media (min-width: 768px) {
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content {
+        padding-top: 6em;
+    }
+}
+@media (min-width: 992px) {
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+        max-width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-top: 0;
+        text-align: left;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content {
+        max-width: 40%;
+        text-align: right !important;
+        padding-top: 0;
+        color: inherit;
+        background: none;
+        background-image:  none !important;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner.hero-banner--medium .hero-banner__img > div {
+        height: 380px;
+        min-height: 380px;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content h1,
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content h2 {
+        background: none;
+        font-size: 3.571rem;
+        max-width: 370px;
+        top: 30%;
+        position: relative;
+        transform: translateY(-30%);
+        line-height: 1.1;
+        text-align: left;
+        display: inline-block;
+        margin-right: 0;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.857rem;
+    }
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content p {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size: 1.715rem;
+        font-weight: 400;
+        text-align: center;
+        padding: 1.25em;
+        background: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-full.png') no-repeat center center;
+        background-size: 100% auto;
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1920px) {
+    .herobanner .wrap-hero-banner.full-width.portal-page .hero-banner .hero-banner__content {
+        max-width: 45%;
+    }
+}
+
+/* Product page type */
+@media (min-width: 320px) {
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        max-width: 100%;
+        height: 100%;
+        padding: 0;
+        margin-top: -8em;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content {
+        background: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-mobile.png') no-repeat top center;
+        padding-top: 5em;
+        color: white;
+        background-size: 100% auto;
+        padding-bottom: 3em;
+        text-align: center !important;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content h1,
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1.1;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.143rem;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content p {
+        font-size: 1.714rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content .hero-banner__cta {
+        margin-top: 1.5em;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__cta .button:hover {
+        background-color: white;
+        border-color: white;
+        color: #032d4b;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner.hero-banner--medium .hero-banner__img > div {
+        height: 360px;
+        min-height: 260px;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner.hero-banner--medium .hero-banner__img > div > img {
+        top: 0 !important;
+        transform: translateX(-50%) !important;
+    }
+}
+@media (min-width: 568px) {
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner.hero-banner--medium .hero-banner__img > div {
+        height: 460px;
+        min-height: 360px;
+    }
+}
+@media (min-width: 768px) {
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content {
+        padding-top: 6em;
+    }
+}
+@media (min-width: 992px) {
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 60%;
+        max-width: 60%;
+        height: 100%;
+        background: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-wedge.png') no-repeat 100% 0;
+        background-size: cover;
+        margin-top: 0;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 15%;
+        padding: 0 1em;
+        width: 475px;
+        background: none;
+        background-image: none !important;
+        text-align: left !important;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content h1,
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.857rem;
+        line-height: 1.1;
+        margin-bottom: 0;
+        color: white;
+        font-weight: 300;
+        margin-right: 1em;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.143rem;
+    }
+    .herobanner .wrap-hero-banner.full-width.product-page .hero-banner.hero-banner--medium .hero-banner__img > div {
+        height: 310px;
+        min-height: 310px;
+    }
+}
+
+/* CTA page type */
+@media (min-width: 320px) {
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left {
+        border-top: 10px solid #0f6aa6;
+        max-width: 100%;
+    }
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content {
+        padding: 1em 0.5em !important;
+    }
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content h1,
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        font-weight: 300;
+    }
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.143rem;
+    }
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__img > div {
+        display: none;
+        height: 0;
+        /* height: 260px;
+        min-height: 260px; */
+    }
+    .bootstrap-container > .row.cta-page {
+        border-top: 10px solid #0f6aa6;
+        padding-top: 1em;
+    }
+}
+@media (min-width: 992px) {
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 2em 1.5em !important;
+    }
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content h1,
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.857rem;
+        line-height: 1.1;
+        font-weight: 300;
+    }
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner .hero-banner__content h2 {
+        font-size: 2.143rem;
+    }
+    .herobanner .wrap-hero-banner.full-width.cta-page .hero-banner.hero-banner--short .hero-banner__img > div {
+        display: none;
+        height: 0;
+        /* height: 200px;
+        min-height: 200px; */
+    }
+}
+
+
+
+/* Color themes ================================================ */
+
+@media (min-width: 320px) {
+    .herobanner .wrap-hero-banner.portal-page.theme_blue-d .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-d-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_blue-d .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-d-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_blue-d .hero-banner .hero-banner__cta .button { border-color: #1a9cd5; background-color: #1a9cd5; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_blue-d .hero-banner .hero-banner__cta .button:hover { color: #1a9cd5; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_blue-d .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#003a5d; }
+    
+    .herobanner .wrap-hero-banner.portal-page.theme_blue-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_blue-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_blue-m .hero-banner .hero-banner__cta .button { border-color: #032d4b; background-color: #032d4b; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_blue-m .hero-banner .hero-banner__cta .button:hover { color: #032d4b; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_blue-m .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#007db9; }
+
+    .herobanner .wrap-hero-banner.portal-page.theme_gray-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-gray-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_gray-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-gray-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_gray-m .hero-banner .hero-banner__cta .button { border-color: #2d2d2d; background-color: #2d2d2d; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_gray-m .hero-banner .hero-banner__cta .button:hover { color: #2d2d2d; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_gray-m .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#767676; }
+
+    .herobanner .wrap-hero-banner.portal-page.theme_green-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-green-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_green-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-green-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_green-m .hero-banner .hero-banner__cta .button { border-color: #074816; background-color: #074816; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_green-m .hero-banner .hero-banner__cta .button:hover { color: #074816; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_green-m .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#00591d; }
+
+    .herobanner .wrap-hero-banner.portal-page.theme_orange-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-orange-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_orange-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-orange-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_orange-m .hero-banner .hero-banner__cta .button { border-color: #642a06; background-color: #642a06; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_orange-m .hero-banner .hero-banner__cta .button:hover { color: #642a06; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_orange-m .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#cf5f10; }
+
+    .herobanner .wrap-hero-banner.portal-page.theme_teal-d .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-d-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_teal-d .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-d-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_teal-d .hero-banner .hero-banner__cta .button { border-color: #14897c; background-color: #14897c; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_teal-d .hero-banner .hero-banner__cta .button:hover { color: #14897c; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_teal-d .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#004b45; }
+
+    .herobanner .wrap-hero-banner.portal-page.theme_teal-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_teal-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_teal-m .hero-banner .hero-banner__cta .button { border-color: #03342e; background-color: #03342e; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_teal-m .hero-banner .hero-banner__cta .button:hover { color: #03342e; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_teal-m .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#00746d; }
+
+    .herobanner .wrap-hero-banner.portal-page.theme_yellow-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-yellow-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_yellow-m .hero-banner .hero-banner__content { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-yellow-m-mobile.png'); }
+    .herobanner .wrap-hero-banner.product-page.theme_yellow-m .hero-banner .hero-banner__cta .button { border-color: #8b4b00; background-color: #8b4b00; color: white; }
+    .herobanner .wrap-hero-banner.product-page.theme_yellow-m .hero-banner .hero-banner__cta .button:hover { color: #8b4b00; }
+    .herobanner .wrap-hero-banner.full-width.cta-page.theme_yellow-m .hero-banner--below-image.hero-banner--short .wrap-hero-content.wrap-hero-content--left { border-color:#fdb714; }
+}
+@media (min-width: 992px) {
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_blue-d .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-d-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_blue-d .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-d-wedge.png'); }
+
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_blue-m .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_blue-m .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-blue-m-wedge.png'); }
+
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_gray-m .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-gray-m-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_gray-m .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-gray-m-wedge.png'); }
+
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_green-m .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-green-m-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_green-m .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-green-m-wedge.png'); }
+
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_orange-m .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-orange-m-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_orange-m .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-orange-m-wedge.png'); }
+
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_teal-d .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-d-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_teal-d .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-d-wedge.png'); }
+
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_teal-m .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-m-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_teal-m .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-teal-m-wedge.png'); }
+
+    .herobanner .wrap-hero-banner.full-width.portal-page.theme_yellow-m .hero-banner .hero-banner__content p { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-yellow-m-full.png'); }
+    .herobanner .wrap-hero-banner.full-width.product-page.theme_yellow-m .hero-banner--on-image.hero-banner--medium .wrap-hero-content.wrap-hero-content--left { background-image: url('/content/dam/georgia-power/heading/patterns/bkg-yellow-m-wedge.png'); }
+}
+
+.bootstrap-container > .row.cta-page.theme_blue-d.title-text { border-color: #00bcf1; }
+.bootstrap-container > .row.cta-page.theme_blue-m.title-text { border-color: #00bcf1; }
+.bootstrap-container > .row.cta-page.theme_gray-m.title-text { border-color: #959595; }
+.bootstrap-container > .row.cta-page.theme_green-m.title-text { border-color: #b2d235; }
+.bootstrap-container > .row.cta-page.theme_orange-m.title-text { border-color: #fdb714; }
+.bootstrap-container > .row.cta-page.theme_teal-d.title-text { border-color: #00cbc4; }
+.bootstrap-container > .row.cta-page.theme_teal-m.title-text { border-color: #00cbc4; }
+.bootstrap-container > .row.cta-page.theme_yellow-m.title-text { border-color: #fdb714; }
+
+.theme_blue-d.title-text { color: #00bcf1; }
+.theme_blue-m.title-text { color: #00bcf1; }
+.theme_gray-m.title-text { color: #959595; }
+.theme_green-m.title-text { color: #b2d235; }
+.theme_orange-m.title-text { color: #fdb714; }
+.theme_teal-d.title-text { color: #00cbc4; }
+.theme_teal-m.title-text { color: #00cbc4; }
+.theme_yellow-m.title-text { color: #fdb714; }
+
+.theme_blue-d.includes-label .content-card__title { color: #003D5D; }
+.theme_blue-m.includes-label .content-card__title { color: #04588B; }
+.theme_gray-m.includes-label .content-card__title { color: #5A5A5A; }
+.theme_green-m.includes-label .content-card__title { color: #31690A; }
+.theme_orange-m.includes-label .content-card__title { color: #9F4700; }
+.theme_teal-d.includes-label .content-card__title { color: #004B46; }
+.theme_teal-m.includes-label .content-card__title { color: #07504B; }
+.theme_yellow-m.includes-label .content-card__title { color: #CC821C; }
+
+/* PR global-component.css */
+@media (min-width: 992px) {
+    .global-header .header__nav .header__main-nav .sub-nav__wrapper .sub-nav__container .sub-nav__description,
+    .global-header .header__nav .header__main-nav .sub-nav__list.level-three {
+        background-position: right bottom;
+        background-size: cover;
+        background-image: url('/content/dam/georgia-power/other-images/nav-background.png') !important;
+    }
+    .global-header .header__nav .header__main-nav ul {
+        background-color: transparent !important;
+    }
+}
+.btn.btn-outline-primary:not(:hover) {
+    background-color: transparent;
+}
+.wrap-link-list .link-list__list.link-list__list--button-link .link-list__item a {
+    padding: 10px;
+}
