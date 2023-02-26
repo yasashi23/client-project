@@ -1,0 +1,1023 @@
+.container-all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+     font-family: "Bernina Sans"
+  }
+  
+  
+  .summer-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+  }
+  .summer-chart .container .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+     width: 450px;
+  }
+  .summer-chart .container .title h3 {
+    color: #E9521B;
+    z-index: 5;
+    font-size: 24px;
+  }
+  .summer-chart .container .title span {
+    position: relative;
+    margin-top: -10px;
+    margin-left: 8px;
+    font-weight: 300;
+  }
+  .summer-chart .container .title div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .summer-chart .container .title div .icon {
+    z-index: 1;
+  }
+  .summer-chart .container .title div .icon img {
+    width: 35px !important;
+    height: 35px !important;
+    margin-top: -15px;
+  }
+  .summer-chart .chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+  }
+  .summer-chart .chart .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .summer-chart .chart .container .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+  }
+  .summer-chart .chart .container .content .chart-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 45px;
+    width: 450px;
+  }
+  .summer-chart .chart .container .content .chart-box .kwh {
+    width: 90px;
+    display: flex;
+    transform: rotate(35deg);
+    margin-bottom: 50px;
+  }
+  .summer-chart .chart .container .content .chart-box .kwh .cent {
+    transform: rotate(-35deg);
+    margin-top: -4px;
+    font-size: 53px;
+    font-weight: 600;
+  }
+  .summer-chart .chart .container .content .chart-box .kwh .cent-line {
+    width: 1px;
+    height: 76px;
+    /* margin: 0 6px; */
+    background-color: black;
+  }
+  .summer-chart .chart .container .content .chart-box .kwh .kwh-text {
+    transform: rotate(-35deg);
+    margin-top: 38px;
+    margin-left: 11px;
+  }
+  .summer-chart .chart .container .content .chart-box .chartB {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100px;
+  }
+  .summer-chart .chart .container .content .chart-box .chartB span {
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .summer-chart .chart .container .content .chart-box .first {
+    height: 80px;
+    background: linear-gradient(180deg, #FCA90B 0%, #F8BF00 100%);
+  }
+  .summer-chart .chart .container .content .chart-box .center {
+    height: 170px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,148,0,1) 0%, rgba(233,82,27,1) 100%);
+  }
+  .summer-chart .chart .container .content .chart-box .over {
+    height: 180px;
+    background: #E6181C;
+  }
+  .summer-chart .chart .container .content .line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.8;
+    margin: 21px 0 25px;
+    background-color: #cccccc;
+  }
+  .summer-chart .chart .container .spec-chart {
+    font-weight: 400;	
+    display: flex;
+    max-width: 440px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .summer-chart .chart .container .spec-chart span {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  .summer-chart .chart .container .spec-chart span:first-child {
+    width: 280px;
+  }
+  .summer-chart .chart .container .spec-chart span:nth-child(n+2) {
+    width: 120px;
+  }
+  .summer-chart .chart .container .price {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .winter-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+  }
+  .winter-chart .container .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    width: 450px;
+  }
+  .winter-chart .container .title h3 {
+    color: #00B4EF;
+    z-index: 5;
+    font-size: 24px;
+  }
+  .winter-chart .container .title span {
+    position: relative;
+    margin-top: -10px;
+    margin-left: 8px;
+    font-weight: 300;
+  }
+  .winter-chart .container .title div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .winter-chart .container .title div .icon {
+    z-index: 1;
+  }
+  .winter-chart .container .title div .icon img {
+    width: 35px !important;
+    height: 35px !important;
+     margin-top: -15px;
+  }
+  .winter-chart .chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:55px;
+  }
+  .winter-chart .chart .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .winter-chart .chart .container .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+  }
+  .winter-chart .chart .container .content .chart-box {
+    display: flex;
+    align-items: flex-end;
+  }
+  .winter-chart .chart .container .content .chart-box .kwh {
+    width: 90px;
+    display: flex;
+    transform: rotate(35deg);
+    margin-bottom: 50px;
+  }
+  .winter-chart .chart .container .content .chart-box .kwh .cent {
+    transform: rotate(-35deg);
+    margin-top: -4px;
+    font-size: 53px;
+    font-weight: 600;
+  }
+  .winter-chart .chart .container .content .chart-box .kwh .cent-line {
+    width: 1px;
+    height: 76px;
+    /* margin: 0 6px; */
+    background-color: black;
+  }
+  .winter-chart .chart .container .content .chart-box .kwh .kwh-text {
+    transform: rotate(-35deg);
+    margin-top: 38px;
+    margin-left: 11px;
+  }
+  .winter-chart .chart .container .content .chart-box .chartB {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100px;
+  }
+  .winter-chart .chart .container .content .chart-box .chartB span {
+    font-weight: 500;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .winter-chart .chart .container .content .chart-box .center {
+    height: 100px;
+    background: #00B5EF;
+  }
+  .winter-chart .chart .container .content .line {
+    width: 100%;
+    height: 1px;
+    opacity: 0.8;
+    margin: 21px 0 25px;
+     background-color: #cccccc;
+  }
+  .winter-chart .chart .container .spec-chart {
+    display: flex;
+    width: 440px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .winter-chart .chart .container .spec-chart span {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+  }
+  .winter-chart .chart .container .price {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    width: 450px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .nights-concept {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nights-concept .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nights-concept .container .title {
+    margin-bottom: 80px;
+  }
+  .nights-concept .container .title h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .nights-concept .container h3 {
+    text-align: center;
+    width: 290px;
+    font-weight: 400;
+    font-size: 32px;
+    color: #02BDF2;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .nights-concept .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 40px;
+  }
+  .nights-concept .container .content .circle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nights-concept .container .content .circle-content .circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 24px;
+  }
+  .nights-concept .container .content .circle-content .circle p:first-child {
+    font-weight: 500;
+    font-size: 70px;
+    display: flex;
+  }
+  .nights-concept .container .content .circle-content .circle p:first-child span {
+    font-size: 32px;
+  }
+  .nights-concept .container .content .circle-content .circle p:last-child {
+    font-size: 32px;
+    margin-top: -15px;
+  }
+  .nights-concept .container .content .circle-content .txt {
+    margin-bottom: 10px;
+  }
+  .nights-concept .container .content .circle-content .info {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .nights-concept .container .content .circle-content.red .circle {
+    background: #EF2A24;
+  }
+  .nights-concept .container .content .circle-content.red .txt {
+    width: 240px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #EF2A24;
+  }
+  .nights-concept .container .content .circle-content.red .info {
+    width: 270px;
+    text-align: center;
+  }
+  .nights-concept .container .content .circle-content.green .circle {
+    background-color: #A1C132;
+  }
+  .nights-concept .container .content .circle-content.green .txt {
+    width: 151px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #A1C132;
+  }
+  .nights-concept .container .content .circle-content.green .info {
+    width: 168px;
+    text-align: center;
+  }
+  .nights-concept .container .price {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  
+  
+  .ftcolumn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ftcolumn1 {
+    flex-basis: 50%;
+  }
+  
+  .ftcolumn2 {
+    flex-basis: 50%;
+  }
+  .fill-tank .ftcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  .fill-tank .ftcontainer .circle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .fill-tank .ftcontainer .circle-content .circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 24px;
+  }
+  .fill-tank .ftcontainer .circle-content .circle .icon img {
+    width: 50px;
+  }
+  .fill-tank .ftcontainer .circle-content .circle .txt {
+    font-weight: 500;
+    font-size: 52px;
+  }
+  .fill-tank .ftcontainer .circle-content .circle .info {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .fill-tank .ftcontainer .circle-content .image img {
+    width: auto;
+    height: 176px;
+  }
+  .fill-tank .ftcontainer .circle-content.green .circle {
+    background-color: #A1C132;
+  }
+  .fill-tank .ftcontainer .circle-content.green .circle .info {
+    width: 120px;
+  }
+  .fill-tank .ftcontainer .circle-content.red .circle {
+    background: #EF2A24;
+  }
+  .fill-tank .ftcontainer .circle-content.red .circle .info {
+    width: 115px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .pev-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+  }
+  .pev-bars .pevcontainer .chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info {
+    display: flex;
+    gap: 22px;
+    margin-left: auto;
+  /*   margin-right: 20px;  */
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 90px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev p {
+    width: 70px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 10px;
+      line-height: 0.9; padding-bottom: 10px;letter-spacing: 1px;
+    color: #686868;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.green {
+    width: 90px;
+    position: relative;
+    bottom: -50px;
+  }
+  .pev.green {
+    color: #AFD233 !important;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.blue {
+    width: 90px;
+    position: relative;
+    bottom: -50px;
+  }
+  .pev.blue {
+    color: #00C5F2 !important;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.red {
+    bottom: 20px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.red h3 {
+    color: #E6181C !important;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: 25px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title h3 {
+    font-weight: 500 !important;
+    font-size: 21px !important;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title  p {
+    text-align: center;
+    width: 106px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #686868;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title .icon img {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 17px;
+    margin-right: 3px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .kwh {
+    width: 55px;
+    display: flex;
+    transform: rotate(35deg);
+    margin-bottom: 25px;
+    margin-right: -20px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .kwh .cent {
+    transform: rotate(-35deg);
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 400;
+      color: #0F0F0F;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .kwh .cent-line {
+    width: 1px;
+    height: 76px;
+    /* margin: 0 6px; */
+    background-color: #BBBBBB; /* slash */
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .kwh .kwh-text {
+    transform: rotate(-35deg);
+    margin-top: 38px;
+    margin-left: 11px;
+      color: #BBBBBB;
+      font-size: 11px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .chartB {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .chartB span {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .first {
+    height: 15px;
+    background: #AFD233;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .first span {
+    color: #919191;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .center {
+    height: 110px;
+    background: #00C5F2;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .over {
+    height: 180px;
+    background: #E6181C;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .line {
+    width: 450px;
+    height: 1px;
+    opacity: 0.8;
+    margin: 21px 0 25px;
+     background-color: #cccccc;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .spec-chart {
+    display: flex;
+    max-width: 320px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+    margin-bottom: 30px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .spec-chart span {
+  /*	display: flex;
+    justify-content: flex-end;  */
+    font-weight: 600;
+    color: #BBBBBB;
+    font-size: 12px;
+    text-align: center; 
+    margin-left: 25px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .spec-chart span:first-child {
+    width: 111px;  
+    text-align: center;
+    margin-left: 6px;
+  }
+  .pev-bars .pevcontainer .chart .pevcontainer .spec-chart span:nth-child(n+2) {
+    width: 130px;
+  
+  }
+  
+  
+  
+  /* ----------------------------------- Media 650-873 -----------------------------------  */
+  @media only screen and (min-width: 650px) and (max-width: 873px) {
+    .summer-chart .container .title h3 {
+      font-size: 32px;
+    }
+    .summer-chart .container .title div .icon {
+      z-index: 1;
+    }
+    .summer-chart .container .title div .icon img {
+      width: 70px;
+    }
+    .winter-chart .container .title h3 {
+      font-size: 32px;
+    }
+    .winter-chart .container .title div .icon {
+      z-index: 1;
+    }
+    .winter-chart .container .title div .icon img {
+      width: 70px;
+    }
+    .nights-concept .container .title h3 {
+      font-weight: 500;
+      font-size: 32px;
+    }
+    .nights-concept .container h3 {
+      width: 184px;
+      font-size: 28px;
+    }
+    .nights-concept .container .content {
+      gap: 67px;
+    }
+  }
+  
+  
+  
+  /* ----------------------------------- Media 370-649 -----------------------------------  */
+  
+  @media only screen and (min-width: 350px) and (max-width: 649px) {
+    .summer-chart .container .title h3 {
+      font-size: 22px;
+    }
+    .summer-chart .container .title span {
+      margin-top: -1px;
+    }
+    .summer-chart .container .title div .icon {
+      z-index: 1;
+    }
+    .summer-chart .container .title div .icon img {
+      width: 55px;
+    }
+    .summer-chart .chart .container .content {
+      width: 380px;
+    }
+    .summer-chart .chart .container .content .chart-box {
+      gap: 19px;
+    }
+    .summer-chart .chart .container .content .chart-box .chartB {
+      width: 65px;
+    }
+    .summer-chart .chart .container .content .chart-box .chartB span {
+      font-size: 23px;
+    }
+    .summer-chart .chart .container .spec-chart {
+      width: 300px;
+      gap: 0px;
+      margin-bottom: 30px;
+    }
+    .summer-chart .chart .container .spec-chart span {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 12px;
+      text-align: center;
+  
+    }
+    .summer-chart .chart .container .spec-chart span:first-child {
+      width: 200px;
+      margin-right:10x;
+    }
+    .summer-chart .chart .container .spec-chart span:nth-child(n+2) {
+      width: 120px;
+      padding-right:10px;
+    }
+    .summer-chart .chart .container .price {
+      font-size: 10px;
+    }
+    .winter-chart .container .title h3 {
+      color: #00B4EF;
+      z-index: 5;
+      font-size: 22px;
+    }
+    .winter-chart .container .title span {
+      margin-top: -1px;
+    }
+    .winter-chart .container .title div .icon {
+      z-index: 1;
+    }
+    .winter-chart .container .title div .icon img {
+      width: 55px;
+    }
+    .winter-chart .chart .container .content {
+      width: 380px;
+    }
+    .winter-chart .chart .container .content .chart-box .chartB {
+      width: 65px;
+    }
+    .winter-chart .chart .container .content .chart-box .chartB span {
+      font-size: 23px;
+    }
+    .winter-chart .chart .container .content .chart-box .center {
+      height: 100px;
+      background: #00B5EF;
+    }
+    .winter-chart .chart .container .spec-chart {
+      width: 380px;
+    }
+    .winter-chart .chart .container .spec-chart span {
+      width: 190px;
+      font-size: 14px;
+    }
+    .winter-chart .chart .container .price {
+      font-size: 10px;
+    }
+    .nights-concept {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nights-concept .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .nights-concept .container .title {
+      margin-bottom: 80px;
+    }
+    .nights-concept .container .title h3 {
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .nights-concept .container h3 {
+      width: 180px;
+      font-size: 20px;
+    }
+    .nights-concept .container .content {
+      gap: 4px;
+    }
+    .nights-concept .container .content .circle-content .circle {
+      width: 120px;
+      height: 120px;
+    }
+    .nights-concept .container .content .circle-content .circle p:first-child {
+      font-weight: 500;
+      font-size: 46px;
+      display: flex;
+    }
+    .nights-concept .container .content .circle-content .circle p:first-child span {
+      font-size: 32px;
+    }
+    .nights-concept .container .content .circle-content .circle p:last-child {
+      font-size: 20px;
+      margin-top: -6px;
+    }
+    .nights-concept .container .content .circle-content .txt {
+      margin-bottom: 10px;
+    }
+    .nights-concept .container .content .circle-content .info {
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .nights-concept .container .content .circle-content.red .circle {
+      background: #EF2A24;
+    }
+    .nights-concept .container .content .circle-content.red .txt {
+      width: 191px;
+      font-size: 16px;
+    }
+    .nights-concept .container .content .circle-content.red .info {
+      width: 191px;
+      text-align: center;
+    }
+    .nights-concept .container .content .circle-content.green .circle {
+      background-color: #A1C132;
+    }
+    .nights-concept .container .content .circle-content.green .txt {
+      width: 105px;
+      font-size: 25px;
+    }
+    .nights-concept .container .content .circle-content.green .info {
+      width: 168px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .nights-concept .container .price {
+      font-size: 10px;
+    }
+      
+      
+      
+  
+      
+  .ftcolumn1, .ftcolumn2 {
+      flex-basis: 100%;
+   }
+  .fill-tank .ftcontainer {
+      gap: 10px;
+    }
+  .fill-tank .ftcontainer .circle-content  {   /* ******************************************************* */
+  
+      background-color: #006100;
+      margin-bottom: 18px;
+    }
+  .fill-tank .ftcontainer .circle-content .circle {
+      width: 280px;
+      height: 280px;
+      border-radius: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      margin-bottom: 24px;
+    }
+    .fill-tank .ftcontainer .circle-content .circle .icon img {
+      width: 35px;
+    }
+    .fill-tank .ftcontainer .circle-content .circle .txt {
+      font-size: 52px;
+        margin-bottom: 0px !important;
+        line-height: 1;
+    }
+    .fill-tank .ftcontainer .circle-content .circle .info {
+      text-align: center;
+      font-weight: 400;
+      font-size: 18px;
+      width: 90px;
+    }
+    .fill-tank .ftcontainer .circle-content .image img {
+      width: auto;
+      height: 120px;
+    }
+    .fill-tank .ftcontainer .circle-content.green .circle {
+      background-color: #A1C132;
+    }
+    .fill-tank .ftcontainer .circle-content.green .circle .info {
+      width: 102px;
+    }
+    .fill-tank .ftcontainer .circle-content.red .circle {
+      background: #EF2A24;
+    }
+    .fill-tank .ftcontainer .circle-content.red .circle .info {
+      width: 115px;
+    }
+      
+      
+      
+      
+      
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent {
+      width: 370px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info {
+      gap: 0px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev p {
+      width: 70px;
+      font-size: 11px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev h3 {
+      font-size: 25px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.green {
+      width: 114px;
+      bottom: -49px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.green h3 {
+      color: #AFD233;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.blue {
+      bottom: -50px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.blue h3 {
+      color: #00C5F2;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.red {
+      bottom: 20px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .pev.red h3 {
+      color: #E6181C;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title .icon h3 {
+      font-weight: 700;
+      font-size: 42px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title .icon p {
+      text-align: center;
+      width: 106px;
+      font-weight: 600;
+      font-size: 16px;
+      color: #686868;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .pev-info .title .icon img {
+      width: 25px;
+      height: 25px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .chartB {
+      width: 65px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .chartB span {
+      font-size: 23px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .first {
+      height: 20px;
+      background: #AFD233;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .first span {
+      color: #919191;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .center {
+      height: 110px;
+      background: #00C5F2;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .pevcontent .chart-box .over {
+      height: 180px;
+      background: #E6181C;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .spec-chart {
+      width: 370px;
+      gap: 21px;
+      margin-bottom: 30px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .spec-chart span {
+      font-size: 14px;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .spec-chart span:first-child {
+      width: 318px;
+      text-align: center;
+    }
+    .pev-bars .pevcontainer .chart .pevcontainer .spec-chart span:nth-child(n+2) {
+      width: 120px;
+    }
+  }
+  
+  
